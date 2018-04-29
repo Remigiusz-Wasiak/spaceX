@@ -5,7 +5,7 @@ import format from 'date-fns/format';
 import Timer from '../components/Timer';
 import Navbar from '../components/Navbar';
 import MissionLinks from '../components/MissionLinks';
-import Footer from '../components/Footer';
+
 
 
 class LaunchDetails extends React.Component {
@@ -33,7 +33,6 @@ class LaunchDetails extends React.Component {
         <MissionLinks redditCampaign={launch.links.reddit_campaign}
                       presskit={launch.links.presskit}
                       video={launch.links.video_link} />
-        <Footer />
       </div>
     );
   }
