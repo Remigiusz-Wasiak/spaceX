@@ -1,0 +1,40 @@
+.footer
+  height: 10rem
+  background-color: $dark-grey-color
+  padding: 0 7rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-family: $main-font
+
+  &__socialContainer
+    width: 60rem
+    display: flex
+    align-items: center
+
+  &__text, &__link
+    font-size: 1.4rem
+    letter-spacing: .1rem
+    font-weight: 300
+    text-transform: uppercase
+
+  &__text
+    color: $brownish-grey-color
+
+  &__link
+    color: $cool-grey-color
+
+    &:visited
+      text-decoration: none
+      color: $cool-grey-color
+
+    &:hover, &:active
+      text-decoration: none
+      color: $desert-color
+
+    &:first-of-type
+      margin-left: .5rem
+
+    &:not(:first-of-type)
+      margin-left: 2rem
+

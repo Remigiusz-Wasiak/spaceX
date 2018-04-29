@@ -1,16 +1,18 @@
 import { hot } from 'react-hot-loader';
 import * as React from 'react';
-import Home from './view/Home';
 
-import './styles/theme.sass';
-import Watchstop from './components/Watchstop';
+import './styles/main.sass';
+import LaunchDetails from './view/LaunchDetails';
+import launch from './assets/launch.json';
+import launchSite from './assets/launch_site.json';
+import rocket from './assets/rocket.json';
+
 
 class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <main>
-        <Home username="DaftCoder" />
-        <Watchstop from={50} to={55} onSuccess={this.onSuccess} />
+        <LaunchDetails launch={launch} launchSite={launchSite} rocket={rocket} />
       </main>
     );
   }
