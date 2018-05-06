@@ -6,7 +6,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar">
-        <a href="#" className="navbar__link"><span className="arrow"><span className="arrow__short arrow__short--left"></span></span>go back</a>
+        <a href="#" className="navbar__link"><span className="arrow arrow--left"><span className="arrow__short"></span></span>go back</a>
         <img src={logo} alt="logo spacex" className="navbar__logo" />
       </div>
 

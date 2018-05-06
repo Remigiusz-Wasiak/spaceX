@@ -1,0 +1,30 @@
+.exactDetailsWrapper
+  margin-top: 8rem
+
+.exactDetails
+  text-transform: uppercase
+  display: flex
+  margin: 0 0 2rem
+
+  &__itemsList
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    border-left: 2px dotted rgba($cool-grey-color, .6)
+    padding: 0 2.5rem
+
+.detailItem
+  display: flex
+  font-weight: 300 // according to visual project - not specification
+  line-height: 2.2rem
+
+  &:not(:last-of-type)
+    margin-bottom: 1rem
+
+  &__property
+    color: $cool-grey-color
+
+  &__value
+    padding-left: .5rem
+
+

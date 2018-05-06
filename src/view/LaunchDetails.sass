@@ -1,23 +1,35 @@
 .detailsContainer
   margin: 0
-  padding: 7.5rem 3rem
+  padding: 8rem 3rem
   font-family: $main-font
 
-.launchDate
-  color: $cool-grey-color
-  font-size: 1.4rem
-  letter-spacing: .9rem
-  text-transform: uppercase
-  font-family: inherit
-  margin-bottom: 2.5rem
+  &__launchDate
+    color: $cool-grey-color
+    font-size: 1.4rem
+    letter-spacing: .9rem
+    text-transform: uppercase
+    font-family: inherit
+    margin-bottom: 2.5rem
 
-.launchName
-  color: $dark-grey-color
-  font-size: 3.6rem
-  text-transform: uppercase
-  font-family: inherit
-  font-weight: 600
-  letter-spacing: .15rem
-  margin-bottom: 1rem
+  &__launchName
+    color: $dark-grey-color
+    font-size: $main-launch-header
+    text-transform: uppercase
+    font-family: inherit
+    font-weight: 600
+    letter-spacing: .15rem
+    margin-bottom: 1rem
 
+  &__launchLogo
+    max-width: 180px
+    margin-bottom: 8rem
 
+  &__launchDetails
+    color: $dark-grey-color
+    font-size: 1.4rem
+    letter-spacing: .9px // according to visual project - not specification
+    font-family: inherit
+    line-height: 2rem
+
+.rocket
+  margin-top: 8rem

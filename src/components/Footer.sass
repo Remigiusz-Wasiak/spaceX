@@ -8,9 +8,13 @@
   font-family: $main-font
 
   &__socialContainer
-    width: 60rem
+    width: 50%
     display: flex
     align-items: center
+
+  &__rightsContainer
+    width: 50%
+    text-align: end
 
   &__text, &__link
     font-size: 1.4rem
@@ -22,15 +26,15 @@
     color: $brownish-grey-color
 
   &__link
-    color: $cool-grey-color
+    color: $footer-link-color
 
     &:visited
       text-decoration: none
-      color: $cool-grey-color
+      color: $footer-link-visited-color
 
     &:hover, &:active
       text-decoration: none
-      color: $desert-color
+      color: $footer-link-hover-color
 
     &:first-of-type
       margin-left: .5rem

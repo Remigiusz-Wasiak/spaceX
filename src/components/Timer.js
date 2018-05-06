@@ -24,7 +24,7 @@ class Timer extends React.Component {
         currentDate: Date.now(),
       });
     }, 60000);
-  }
+  };
 
   render() {
     const launchDate = new Date(this.props.launchDate);
@@ -32,7 +32,7 @@ class Timer extends React.Component {
 
     return (
       <div className="timer">
-        <span>{ Math.abs(differenceInDays(launchDate, currentDate)) + ' days ' + Math.abs(differenceInHours(launchDate, currentDate)%24) + ' hrs ' + Math.abs(differenceInMinutes(launchDate, currentDate)%60) }<span>{ differenceInDays(launchDate, currentDate) > 0 ? ' mins to start' : ' mins ago' }</span></span>
+        <span>{ Math.abs(differenceInDays(launchDate, currentDate)) + ' days ' + Math.abs(differenceInHours(launchDate, currentDate) % 24) + ' hrs ' + Math.abs(differenceInMinutes(launchDate, currentDate) % 60) }<span>{ differenceInDays(launchDate, currentDate) > 0 ? ' mins to start' : ' mins ago' }</span></span>
       </div>
     );
   }
