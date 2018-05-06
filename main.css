@@ -53,17 +53,16 @@ ol, ul {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 2rem; }
+  height: 2rem;
+  background-image: url(arrow_pointer.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: .5rem; }
   .arrow__short {
     height: .2rem;
     width: 41px;
     background-color: #ccac5b;
     margin-right: 2rem; }
-    .arrow__short--left:before {
-      content: url(arrow_pointer.png);
-      position: absolute;
-      top: .33rem;
-      left: -.2rem; }
 
 .link {
   display: inline-block;
@@ -77,34 +76,92 @@ ol, ul {
   color: #ffffff; }
   .link:visited {
     text-decoration: none;
-    color: #ffffff;
-    border: 1px #ffffff solid; }
+    color: #ffffff; }
   .link:hover, .link:active {
     text-decoration: none;
     color: #ccac5b;
-    border: 1px #ccac5b solid; }
+    -webkit-box-shadow: inset 0 0 10px #ffffff;
+            box-shadow: inset 0 0 10px #ffffff; }
+
+.detailsHeader {
+  color: #ccac5b;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1.5rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  display: block;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #ccac5b;
+  margin-bottom: 2rem; }
+
+.exactDetailsWrapper {
+  margin-top: 8rem; }
+
+.exactDetails {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 2rem; }
+  .exactDetails__itemsList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-left: 2px dotted rgba(167, 169, 172, 0.6);
+    padding: 0 2.5rem; }
+
+.detailItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+  line-height: 2.2rem; }
+  .detailItem:not(:last-of-type) {
+    margin-bottom: 1rem; }
+  .detailItem__property {
+    color: #a7a9ac; }
+  .detailItem__value {
+    padding-left: .5rem; }
 
 .detailsContainer {
   margin: 0;
-  padding: 7.5rem 3rem;
+  padding: 8rem 3rem;
   font-family: "Open Sans", sans-serif; }
+  .detailsContainer__launchDate {
+    color: #a7a9ac;
+    font-size: 1.4rem;
+    letter-spacing: .9rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin-bottom: 2.5rem; }
+  .detailsContainer__launchName {
+    color: #22272b;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: .15rem;
+    margin-bottom: 1rem; }
+  .detailsContainer__launchLogo {
+    max-width: 180px;
+    margin-bottom: 8rem; }
+  .detailsContainer__launchDetails {
+    color: #22272b;
+    font-size: 1.4rem;
+    letter-spacing: .9px;
+    font-family: inherit;
+    line-height: 2rem; }
 
-.launchDate {
-  color: #a7a9ac;
-  font-size: 1.4rem;
-  letter-spacing: .9rem;
-  text-transform: uppercase;
-  font-family: inherit;
-  margin-bottom: 2.5rem; }
-
-.launchName {
-  color: #22272b;
-  font-size: 3.6rem;
-  text-transform: uppercase;
-  font-family: inherit;
-  font-weight: 600;
-  letter-spacing: .15rem;
-  margin-bottom: 1rem; }
+.rocket {
+  margin-top: 8rem; }
 
 .navbar {
   display: -webkit-box;
@@ -145,8 +202,10 @@ ol, ul {
   height: 5rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
+  font-weight: 400;
   letter-spacing: .1rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #22272b; }
 
 .missionLinks {
   font-family: "Open Sans", sans-serif;
@@ -198,13 +257,16 @@ ol, ul {
           justify-content: space-between;
   font-family: "Open Sans", sans-serif; }
   .footer__socialContainer {
-    width: 60rem;
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .footer__rightsContainer {
+    width: 50%;
+    text-align: end; }
   .footer__text, .footer__link {
     font-size: 1.4rem;
     letter-spacing: .1rem;
