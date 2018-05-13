@@ -3,18 +3,27 @@
   align-items: center
   position: relative
   height: 2rem
-
-  &--left
   background-image: url("../assets/imgs/arrow_pointer.png")
   background-position: left
   background-repeat: no-repeat
   padding-left: .5rem
 
-  &__short
-    height: .2rem
+  &--right
+    transform: rotate(180deg)
+
+  &--long
+    width: 100%
+
+  &--short
     width: 41px
+
+  &__line
+    display: inline-block
+    height: .2rem
     background-color: $arrows-color
-    margin-right: 2rem
+    width: 100%
+
+
 
 
 

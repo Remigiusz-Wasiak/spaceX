@@ -15,20 +15,21 @@ class LaunchDetails extends React.Component {
     launch: PropTypes.object.isRequired,
     launchSite: PropTypes.object.isRequired,
     rocket: PropTypes.object.isRequired,
+    onBackClick: PropTypes.func.isRequired,
   };
   render() {
-    const { launch, launchSite, rocket } = this.props;
+    const { launch, launchSite, rocket, onBackClick } = this.props;
     return (
       <div>
-        <Navbar />
-        <div className="row detailsContainer">
-          <div className="col-sm-6">
+        <Navbar onBackClick={onBackClick} />
+        <div className="detailsContainer">
+          <div className="detailsContainer__column">
             <div className="detailsContainer__launchDate">{format(launch.launch_date_utc, 'DD MMMM YYYY')}</div>
             <h3 className="detailsContainer__launchName">{launch.launch_site.site_name}</h3>
             <Timer launchDate={launch.launch_date_utc} />
             <img className="detailsContainer__launchLogo" src={launch.links.mission_patch_small} alt="launch logo" />
           </div>
-          <div className="col-sm-6">
+          <div className="detailsContainer__column">
             <div className="detailsContainer__launchDetails">
               <Details details={launch.details} />
               <Rocket rocket={rocket} />

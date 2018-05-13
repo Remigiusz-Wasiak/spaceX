@@ -5,25 +5,34 @@
   position: relative
   justify-content: center
   align-items: center
+  padding: 0 3rem
 
 
   &__link
     display: flex
     color: $desert-color
-    position: absolute
-    left: 4rem
     font-weight: 400
     text-transform: uppercase
+    text-decoration: none
     font-size: 1.4rem
     font-family: $main-font
     letter-spacing: .9rem
     align-items: center
+    flex: 1
 
     &:hover, &:active, &:visited
-      text-decoration: none
       color: $desert-color
+      cursor: pointer
 
   &__logo
-    display: block
-    width: 25rem
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: 6rem
+    flex: 2
 
+  &__text
+    padding-left: 2rem
+
+  &__emptyBox
+    flex: 1

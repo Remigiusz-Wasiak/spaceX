@@ -13,8 +13,8 @@ class Rocket extends React.Component {
     return (
       <div className="exactDetailsWrapper">
         <h4 className="detailsHeader">rocket</h4>
-        <div className="row exactDetails">
-          <div className="col-xs-6 exactDetails__itemsList">
+        <div className="exactDetails">
+          <div className="exactDetails__itemsList">
             <div className="detailItem">
               <span className="detailItem__property">Name:</span>
               <span className="detailItem__value">{rocket.name}</span>
@@ -36,7 +36,7 @@ class Rocket extends React.Component {
               <span className="detailItem__value">{`${rocket.mass.kg}kg / ${rocket.mass.lb}lb`}</span>
             </div>
           </div>
-          <div className="col-xs-6 exactDetails__itemsList">
+          <div className="exactDetails__itemsList">
             <div className="detailItem">
               <span className="detailItem__property">First flight: </span>
               <span className="detailItem__value">{format(rocket.first_flight, 'DD MMMM YYYY')}</span>
