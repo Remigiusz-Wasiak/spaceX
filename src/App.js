@@ -6,11 +6,8 @@ import LaunchDetails from './view/LaunchDetails';
 import launch from './assets/launch.json';
 import launchSite from './assets/launch_site.json';
 import rocket from './assets/rocket.json';
-import launches from './assets/launches.json';
 import Footer from './components/Footer';
 import LaunchesList from './view/LaunchesList';
-
-
 
 class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
@@ -30,7 +27,6 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
       case 'list':
         return (
           <LaunchesList
-            launches={launches}
             onLaunchClick={this.handleLaunchClick}
           />
         );

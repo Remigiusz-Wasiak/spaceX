@@ -13,7 +13,7 @@ class FilterButtons extends React.Component {
 
     return (
         <div className="filterButtons">
-          <span className={`link link--header ${currentFilter === '' ? 'link--active' : ''}`} onClick={() => handleFilterChange('')}>All rockets</span>
+          {/*<span className={`link link--header ${currentFilter === '' ? 'link--active' : ''}`} onClick={() => handleFilterChange('')}>All rockets</span>*/}
           {rockets.map(rocket => <span key={rocket}
                                        className={`link link--header ${currentFilter === rocket ? 'link--active' : ''}`}
                                        onClick={() => handleFilterChange(rocket)}>{rocket}</span>)}
