@@ -202,6 +202,21 @@ ol, ul {
 .launchesList {
   width: 100%;
   margin-top: 5rem; }
+  .launchesList--hidden {
+    display: none;
+    margin: 0; }
+
+.loaderContainer {
+  margin-top: 5rem; }
+
+.infoContainer--hidden {
+  display: none; }
+
+.infoContainer__message {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  color: #ccac5b; }
 
 .navbar {
   display: -webkit-box;
@@ -376,7 +391,7 @@ ol, ul {
     letter-spacing: 1.8rem; }
 
 .filterButtons {
-  width: 70rem;
+  width: 85rem;
   margin-top: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,7 +443,7 @@ ol, ul {
       -ms-flex-item-align: end;
           align-self: flex-end; }
   .filteredLaunch__details {
-    width: 47rem;
+    width: 52rem;
     letter-spacing: .1rem;
     color: #a7a9ac;
     padding-right: 3rem;
